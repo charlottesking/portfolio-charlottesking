@@ -17,13 +17,13 @@ img {
 /* ==========================
    2. DESIGN TOKENS
    ========================== */
-:root {
+   :root {
     /* Color */
-    --color-bg: #fafafa;
+    --color-bg: #faf8f6;
     --color-surface: #ffffff;
     --color-text: #1f2937; 
-    --color-muted: #6b7280; 
-    --color-accent: #0369a1; 
+    --color-muted: #8b7a7a; 
+    --color-accent: #a81e3e; 
 
     /* Spacing - a modular scale */
     --space-sm: 0.5rem;
@@ -50,17 +50,47 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-size: var(--text-base);
+    line-height: var(--leading-body);
 }
 
-h1 { font-size: var(--text-h1); line-height: var(--leading-heading); }
-h2 { font-size: var(--text-h2); line-height: var(--leading-heading); }
-h3 { font-size: var(--text-h3); line-height: var(--leading-heading); }
+h1 { 
+    font-size: var(--text-h1); 
+    line-height: var(--leading-heading);
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
 
-h1, h2, h3 { margin-bottom: var(--space-sm); }
-p { margin-bottom: var(--space-md); }
-p:last-child { margin-bottom: 0; }
+h2 { 
+    font-size: var(--text-h2); 
+    line-height: var(--leading-heading);
+    color: var(--color-accent-dark);
+    margin-bottom: var(--space-sm);
+}
 
-a { color: var(--color-accent); }
+h3 { font-size: var(--text-h3); 
+    line-height: var(--leading-heading);
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+p { 
+    margin-bottom: var(--space-md);
+}
+
+p:last-child { 
+    margin-bottom: 0; 
+}
+
+a { 
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
 /* ==========================
    4. LAYOUT
    ========================== */
@@ -69,3 +99,8 @@ body {
     margin: 0 auto;
     padding: var(--space-lg) var(--space-md);
 }
+
+main {
+    max-width: var(--reading-width);
+}
+
