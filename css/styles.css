@@ -24,6 +24,9 @@ img {
     --color-text: #1f2937; 
     --color-muted: #8b7a7a; 
     --color-accent: #a81e3e; 
+    --front-stack: system-ui, 'Segoe UI', Tahoma, sans-serif;
+    --color-surface-alt: #f1f5f9;
+    --radius-md: 8px;
 
     /* Spacing - a modular scale */
     --space-sm: 0.5rem;
@@ -38,6 +41,7 @@ img {
     --text-h1: 2.25rem;
     --leading-body: 1.6;
     --leading-heading: 1.2;
+    --front-stack: system-ui, 'Segoe UI', Tahoma, sans-serif;
 
     /* Layout */
     --page-width: 64rem;
@@ -51,6 +55,7 @@ body {
     color: var(--color-text);
     font-size: var(--text-base);
     line-height: var(--leading-body);
+    font-family: var(--front-stack);
 }
 
 h1 { 
@@ -63,7 +68,7 @@ h1 {
 h2 { 
     font-size: var(--text-h2); 
     line-height: var(--leading-heading);
-    color: var(--color-accent-dark);
+    color: var(--color-accent);
     margin-bottom: var(--space-sm);
 }
 
@@ -94,7 +99,39 @@ a:hover {
 /* ==========================
    4. LAYOUT
    ========================== */
-body {
+header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background-color: var(--color-surface-alt);
+    margin-bottom: var(--space-lg);
+}
+.header-text { flex: 1; }
+
+.header-pic {flex: 1;
+    background-color: var(--color-surface);
+    min-height: 18rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+}
+nav {
+    padding: var(--space-md) 0;
+}
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin-right: var(--space-lg);
+}
+nav a:hover { color: var(--color-accent); }
+
+section { margin-bottom: var(--space-xl); }
+
+
+   body {
     max-width: var(--page-width);
     margin: 0 auto;
     padding: var(--space-lg) var(--space-md);
@@ -103,4 +140,5 @@ body {
 main {
     max-width: var(--reading-width);
 }
+
 

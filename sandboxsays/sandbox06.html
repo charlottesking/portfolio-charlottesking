@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bureau of Lost Socks — Sandbox</title>
+
+<!-- Inline CSS for learning purposes. This file is a sandbox:
+     it is NOT linked to css/styles.css and never will be. Break it freely. -->
+
+<style>
+
+/* ==========================
+   1. RESET
+   ========================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================
+   2. DESIGN TOKENS
+   ========================== */
+:root {
+    /* Color */
+    --color-bg: #fafafa;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --color-accent: #0369a1;
+
+    /* Spacing — a modular scale */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+
+    /* Typography */
+    --text-base: 1rem;
+    --text-h3: 1.25rem;
+    --text-h2: 1.5rem;
+    --text-h1: 2.25rem;
+    --leading-body: 1.6;
+    --leading-heading: 1.2;
+
+    /* Layout */
+    --page-width: 64rem;
+    --reading-width: 70ch;
+}
+
+/* ==========================
+   3. BASE ELEMENT STYLES
+   ========================== */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: var(--text-base);
+    line-height: var(--leading-body);
+}
+
+h1 { font-size: var(--text-h1); line-height: var(--leading-heading); }
+h2 { font-size: var(--text-h2); line-height: var(--leading-heading); }
+h3 { font-size: var(--text-h3); line-height: var(--leading-heading); }
+
+h1, h2, h3 { margin-bottom: var(--space-sm); }
+p { margin-bottom: var(--space-md); }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--color-accent); }
+
+/* ==========================
+   4. LAYOUT
+   ========================== */
+body {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+.exhibit {
+    background-color: #f1f5f9;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    padding: var(--space-md);
+    margin-bottom: 1rem;
+}
+
+.status {
+    color: #6b7280;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>The Bureau of Lost Socks</h1>
+    <p>Reuniting single socks with their partners since 1994.</p>
+    <div class="sock-photo">
+        <!-- TODO: replace before submitting -->
+        <p>Evidence photo goes here</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#mandate">Mandate</a>
+    <a href="#recoveries">Recoveries</a>
+    <a href="#report">Report a Sock</a>
+</nav>
+
+<main>
+
+    <section id="mandate">
+        <h2>Our Mandate</h2>
+        <p>Every year an estimated four million socks enter the laundry system and do not come out. The Bureau exists to catalogue them, describe them accurately, and hold them until claimed.</p>
+        <p>We do not speculate about where the missing partner went. We only describe what is in front of us.</p>
+    </section>
+
+    <section id="recoveries">
+        <h2>Recent Recoveries</h2>
+        <ul>
+            <li class="exhibit">
+                <h3>Exhibit A</h3>
+                <p class="status">Unclaimed</p>
+                <p>Grey wool, one heel worn through, faint smell of cedar.</p>
+            </li>
+            <li class="exhibit">
+                <h3>Exhibit B</h3>
+                <p class="status">Claimed</p>
+                <p>Novelty print, small dinosaurs, recovered behind a dryer in Fort Worth.</p>
+            </li>
+            <li class="exhibit">
+                <h3>Exhibit C</h3>
+                <p class="status">Disputed</p>
+                <p>Argyle, claimed by two households on the same afternoon.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="report">
+        <h2>Report a Sock</h2>
+        <p>Describe the sock as precisely as you can. <a href="#mandate">Read the mandate</a> before filing, so your description matches the Bureau's format.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Bureau of Lost Socks &middot; A sandbox file. Nothing here is real.</p>
+</footer>
+
+</body>
+</html>
