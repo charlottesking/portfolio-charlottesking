@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student: Flexbox Practice Exercise</title>
+
+    <style>
+        :root {
+            /* Color */
+            --color-bg: #f8fafc;
+            --color-surface: #ffffff;
+            --color-surface-alt: #ecfeff;
+            --color-text: #172033;
+            --color-border: #0891b2;
+            --color-accent: #312e81;
+            --color-accent-alt: #4f46e5;
+            --color-on-accent: #ffffff;
+
+            /* Spacing */
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+
+            /* Structure */
+            --radius-md: 0.6rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: system-ui, sans-serif;
+            line-height: 1.5;
+        }
+
+        .page {
+            width: min(90%, 70rem);
+            margin: 0 auto;
+            padding: var(--space-lg) 0;
+        }
+
+        /* The parent box. Flexbox arranges its direct children. */
+        header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-lg);
+            background-color: var(--color-accent);
+            color: var(--color-on-accent);
+            border-radius: var(--radius-md);
+        }
+
+        /* flex: 1 shares the space between the children. */
+        .header-child {
+            flex: 1;
+            padding: var(--space-lg);
+            background-color: var(--color-accent-alt);
+            border-radius: var(--radius-md);
+        }
+
+        .cards-section {
+            margin-top: var(--space-lg);
+            padding: var(--space-lg);
+            background-color: var(--color-surface);
+            border: 2px solid var(--color-accent);
+            border-radius: var(--radius-md);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+
+        .card {
+            flex: 1;
+            min-width: 12rem;
+            padding: var(--space-lg);
+            background-color: var(--color-surface-alt);
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-md);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <h1>Parent Header Box</h1>
+
+        <header>
+
+            <div class="header-child">
+                <h2>First Child</h2>
+                <p>This is the first child box inside the header.</p>
+            </div>
+
+            <div class="header-child">
+                <h2>Second Child</h2>
+                <p>Both children share the available space.</p>
+            </div>
+
+        </header>
+
+        <section class="cards-section">
+
+            <h2>Three Cards in One Section</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Card One</h3>
+                    <p>These cards share one layout rule and one visual treatment.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Card Two</h3>
+                    <p>The parent uses Flexbox to arrange its direct child boxes.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Card Three</h3>
+                    <p>Resize the window and watch the cards wrap.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
