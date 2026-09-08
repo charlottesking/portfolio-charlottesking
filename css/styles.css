@@ -176,8 +176,24 @@ main {
     gap: var(--space-lg);
 }
 .about-image { flex: 1; min-width: 16rem; }
-.about-image img { width: 100%; border-radius: var{var(--radius-md)}}
+.about-image img { width: 100%; 
+    border-radius: var(--radius-md);
+    width: 100%;
+    max-height: 10rem
+
+    rem;
+    object-fit: cover;
+}
+
 .about-text { flex: 2; min-width: 16rem; max-width: var(--reading-width); }
+
+.about, .goals, aside {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
 
 .project-list {
     list-style: none;
@@ -235,3 +251,27 @@ blockquote {
     padding-left: var(--space-md);
     color: var(--color-muted);
     font-style: italic;
+
+/* ==========================================
+   6. INTERACTIVE ELEMENTS
+   ========================================== */
+summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary h2 {
+  display: inline;
+  margin: 0;
+}
