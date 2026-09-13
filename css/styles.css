@@ -104,6 +104,10 @@ a:hover {
 
 /* ==========================
    4. LAYOUT
+   Breakpoints used in this file:
+     768px  — tablet and larger
+   (CSS variables cannot be used inside @media conditions,
+    so breakpoints are documented here instead of tokenized.)
    ========================== */
 header {
     display: flex;
@@ -154,16 +158,15 @@ main {
     margin: 0 auto;
 }
 
-.skills-grind {
+.skills-grid {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: var(--space-md);
 }
 
 .skil-card {
-    flex: 1;
-    min-width: 12rem;
     padding: var(--space-md);
     background-color: var(--color-surface-alt);
     border-radius: var(--radius-md);
@@ -187,20 +190,38 @@ main {
 
 .about-text { flex: 2; min-width: 16rem; max-width: var(--reading-width); }
 
-.about, .goals, aside {
-    background-color: var(--color-surface);
-    border-radius: var(--radius-md);
-    padding: var(--space-lg);
-    margin-bottom: var(--space-lg);
-    box-shadow: var(--shadow-sm);
+.about, .goals, aside, #contact, .projects {
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .project-list {
     list-style: none;
-    display: felx;
-    flex-direction: column;
-    gap: var(--space-lg);
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
 }
+@media (min-width: 768px) {
+    .project-list { grid-template-columns: 1fr 1fr; }
+    .project-card.featured { grid-column: span 2; }
+}
+.project-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+.project-card h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+
 .project-card {
     padding: var(--space-lg);
     background-color: var(--color-surface);
