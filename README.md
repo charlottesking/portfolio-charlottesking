@@ -1,15 +1,20 @@
 # portfolio-charlottesking
 
-A portfolio site built from sctatch in HTML and CSS for for WRIT 40363. It introduces who I am, what I am learning, and the work I have made! 
+# Charlie King — Personal Portfolio
 
-**
+A multi-page portfolio website showcasing data analysis projects, digital strategy experience, and technical skill sets.
 
-##Built with 
-- semantic HTML5
-- CSS with design tokens, Flexbox, and Grid 
-- Git and GitHub Pages 
+## Live Website
+- **Live URL:** https://charlottesking.github.io/portfolio-charlottesking/
 
-##Notes 
+## Project Description
+This site was built as part of a Web Design lab to develop an accessible, responsive personal portfolio. It highlights academic coursework, professional internship experience, data analytics tools, and featured case studies.
 
-The accent color and font pairing were chosen in Lab 10.5. Contrast was verified against WCAG AA
+## Technologies Used
+- **HTML5:** Semantic document structure (`<header>`, `<main>`, `<section>`, `<article>`, `<details>`, `<aside>`)
+- **CSS3:** Custom design tokens via CSS variables, flexbox, CSS grid, responsive media queries, and pseudo-elements
+- **Version Control & Hosting:** Git, GitHub, and GitHub Pages deployment
 
+## Notes
+- Fully responsive across desktop, tablet, and mobile screen sizes.
+- Tested and verified on modern desktop and mobile browsers.
