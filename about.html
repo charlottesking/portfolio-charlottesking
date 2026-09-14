@@ -3,88 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me | Charlie King</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-             <nav class="nav-container">
-                <a href="index.html" class="logo">Charlie King</a>
-                 <div class="nav-links">
-                     <a href="index.html">Home</a>
-                     <a href="about.html">About</a>
-                     <a href="index.html#contact">Contact</a>
-                 </div>
-            </nav>
 
-            <header>
-                
-                <div class=""header=text">
-                    <h1> Charlie King </h1>
-                    <p> </p>Data Analyst | Business Strategy</p>
-                </div>
-                <div class="header-pic">
-                    <img src="images/newphoto.JPG" alt="Charlie's photo"
-                </div>
-            </header>
-            <h1>Welcome</h1>
-            <p>I'm Charlie King, a data analyst and TCU senior pursuing a degree in Digital Culture and Data Analytics with a business minor. I'm passionate about turning data into actionable business insights and strategic recommendations.</p>
-    
-        <main>
-            <section class="about">  
-                <div class="about-text">
-                    <details>
-                        <summary><h2>A Little Bit About Me</h2></summary>
-                        <div class="about-image"> 
-                            <img src="images/grandjunction.jpg" alt="mid-length headshot"
-                         </div> 
-                        <p>I completed the International Baccalaureate (IB) program in high school, which built the foundation for how I approach problems — methodically, but always curious. That curiosity followed me to TCU, where I'm pursuing a degree in Digital Culture and Data Analytics with a business minor.</p>
-                        <p>What I've loved most about this degree is how it's let me explore both sides of my brain. On one hand, I've learned to work with real data — using Python and Pandas to clean and analyze datasets, applying statistical models like OLS regression, and building interactive visualizations in Tableau to tell stories numbers alone can't. On the other, the "Digital Culture" side of my degree has let me dig into the creative and human side of data: how people interact with technology, how design shapes the way information is understood, and how businesses use both art and analytics to connect with people.</p>
-                        <p>I'm currently building on that technical foundation by learning SQL, and I'm excited to keep growing as someone who can bridge the gap between raw data and the creative, strategic thinking that makes it useful.</p>
-                        <p>Outside of school, I work part-time at Common Grounds, where I've built strong communication skills and learned to stay organized under pressure.</p>    
-                    </details>
-                </div>
-            </section>
+    <nav class="nav-container">
+        <a href="index.html" class="logo">Charlie King</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-           <section class="projects">
-                     <details>
-                         <summary><h2>Projects</h2></summary>
-                        <ul class="project-list">
-                            <li class="project-card featured">
-                                <h4>A Wolf in Sheep's Clothing</h4>
-                                <p></p>
-                             </li>
-                             <li class="project-card">
-                                <h4>Sephora & Natural Beauty Write-Up</h4>
-                                <p></p>
-                            </li>
-                            <li class="project-card">
-                                <h4>Sound-Activated Lamp</h4>
-                                <p></p>
-                            </li>
-                        </ul>
-                    </details>
-            </section>
-           
-           
-            <section class="goals">
-                <details> 
-                <summary><h2>Goals</h2></summary>
-                <p>I would love to learn the basics of Web design and hope it will help me out in the future when job hunting. My goal this semester is to be able to complete a website all on my own without any outside help!</p>
-                </details>
-                
-            </section>
-            <aside>
-               <details>
-                    <summary><h2 id="resources">Resources</h2></summary>
-                    <ul>
-                        <li><a href="https://www.jigsawplanet.com/" target="_blank" rel ="noopener">Jigsaw Planet</a> - where I go to play and create custom jigsaw puzzles.</li>
-                        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a> - where I look up tutorials and walkthroughts.</li>
+    <!-- Header Hero -->
+    <header class="header-card">
+        <div class="header-text">
+            <span class="role-badge">Data Analyst | Business &amp; Technology</span>
+            <h1>Charlie King</h1>
+            <p class="hero-desc">I analyze data to solve business problems. Pursuing a degree in Digital Culture and Data Analytics with a business minor at TCU.</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
+        <div class="header-pic">
+            <img src="images/newphoto.JPG" alt="Charlie's photo">
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="card about-section">  
+            <h2>About ME</h2>
+            <div class="about-text">
+                <p>I completed the International Baccalaureate (IB) program in high school, which built the foundation for how I approach problems — methodically, but always curious. That curiosity followed me to TCU, where I'm pursuing a degree in Digital Culture and Data Analytics with a business minor.</p>
+                <p>What I've loved most about this degree is how it's let me explore both sides of my brain. On one hand, I've learned to work with real data — using Python and Pandas to clean and analyze datasets, applying statistical models like OLS regression, and building interactive visualizations in Tableau to tell stories numbers alone can't. On the other, the "Digital Culture" side of my degree has let me dig into the creative and human side of data: how people interact with technology, how design shapes the way information is understood, and how businesses use both art and analytics to connect with people.</p>
+                <p>I'm currently building on that technical foundation by learning SQL, and I'm excited to keep growing as someone who can bridge the gap between raw data and the creative, strategic thinking that makes it useful.</p>
+                <p>Outside of school, I work part-time at Common Grounds, where I've built strong communication skills and learned to stay organized under pressure.</p>    
+            </div>
+        </section>
+   
+        <!-- Experience & Skills Section -->
+        <section class="card experience-section">
+            <h2>Experience &amp; Skills</h2>
+            <hr class="section-divider">
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Brand Intern — The Lewis Agency LLC</h3>
+                    <span class="date-badge">2024–2025</span>
+                </div>
+                <ul class="styled-list">
+                    <li>Designed social media content strategy for 50th anniversary campaign</li>
+                    <li>Created and managed email campaigns and media assets</li>
+                    <li>Developed brand narrative across multiple platforms</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Pandas</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Statistical Analysis</span>
+                    <span class="skill-badge">Data Visualization</span>
+                    <span class="skill-badge">Excel</span>
+                    <span class="skill-badge">HTML/CSS</span>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Projects Section -->
+        <section class="card projects-section" id="projects">
+            <h2>Projects</h2>
+            <hr class="section-divider">
+
+            <div class="projects-grid">
+                <!-- Project 1: Data Analytics Card with Colorful Banner -->
+                <article class="project-card">
+                    <div class="project-banner chart-gradient">
+                        <div class="mock-chart">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                            <span class="bar bar-4"></span>
+                        </div>
+                        <span class="banner-tag">Regression Analysis</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="pill-group">
+                            <span class="pill">Python</span>
+                            <span class="pill">Pandas</span>
+                            <span class="pill">OLS Regression</span>
+                        </div>
+                        <h4>Consumer Product Analysis: Sustainability vs. Price Sensitivity</h4>
+                        <p>Quantitative analysis of product performance data to isolate factors driving consumer engagement. Tested competing hypotheses using regression modeling.</p>
+                        <div class="callout">
+                            <strong>Key Finding:</strong> Price emerged as the dominant predictor of consumer engagement.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Brand / Media Strategy Card with Colorful Banner -->
+                <article class="project-card">
+                    <div class="project-banner brand-gradient">
+                        <div class="mock-network">
+                            <span class="circle circle-1"></span>
+                            <span class="line"></span>
+                            <span class="circle circle-2"></span>
+                        </div>
+                        <span class="banner-tag">Brand Strategy</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="pill-group">
+                            <span class="pill">Social Media Strategy</span>
+                            <span class="pill">Content Creation</span>
+                        </div>
+                        <h4>Lewis Agency LLC — Brand Campaign</h4>
+                        <p>Executed a multi-month social media campaign celebrating a 50th anniversary. Showcased brand evolution across three generations and managed email rollouts.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="coming-soon-box">
+                <details open>
+                    <summary><h3>Coming Soon</h3></summary>
+                    <p class="coming-soon-intro">I'm currently working on:</p>
+                    <ul class="styled-list">
+                        <li><strong>Sound-Activated Lamp:</strong> Interactive hardware project using Arduino</li>
                     </ul>
-               </details>
-            </aside>
-        </main>
-        <footer>
-            <p>&copy; 2026 Charlie King</p>
-        </footer>
+                </details>
+            </div>
+        </section>
+   
+        <!-- Resources Section -->
+        <section class="card resources-section">
+            <details open>
+                <summary><h2 id="resources">Resources</h2></summary>
+                <ul class="styled-list">
+                    <li><a href="https://www.kaggle.com/" target="_blank" rel="noopener">Kaggle</a> — Platform for open-source datasets, exploratory data analysis, and machine learning community benchmarks.</li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a> — Where I look up tutorials and walkthroughs.</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card contact-card" id="contact">
+            <h3>Let's Connect</h3>
+            <p>Reach out directly for opportunities and collaboration:</p>
+            <div class="contact-buttons">
+                <a href="mailto:charlotte.is.king@gmail.com" class="contact-pill email-pill">Email: charlotte.is.king@gmail.com</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-pill linkedin-pill">LinkedIn: Connect with me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Charlie King</p>
+    </footer>
+
 </body>
 </html>

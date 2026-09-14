@@ -1,34 +1,56 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Home</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-          
-            <nav class="nav-container">
-                <a href="index.html" class="logo">Charlie King</a>
-                 <div class="nav-links">
-                     <a href="index.html">Home</a>
-                     <a href="about.html">About</a>
-                     <a href="index.html#contact">Contact</a>
-                 </div>
-            </nav>
-           <h1>Charlie King</h1>
-        </header>
-        <main>
-            <p>I'm a senior at TCU studying Digital Culture and Data Analytics, with a growing interest in beauty-industry data analytics.</p>
-    
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>You can reach me at charlotte.is.king@gmail.com or connect with me on <a href="[your LinkedIn URL]" target="_blank" rel="noopener">LinkedIn</a>.</p> 
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Charlie King</p>
-        </footer>
-    </body>
+    <!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie King | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="nav-container">
+        <a href="index.html" class="logo">Charlie King</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Card (Side-by-Side) -->
+    <main class="home-main">
+        <section class="home-hero-card">
+            <div class="hero-left">
+                <span class="role-pill">Data Analyst | Business &amp; Technology</span>
+                <h1 class="hero-name">Charlie King</h1>
+                <p class="hero-tagline">
+                    I analyze data to solve business problems. Pursuing a degree in Digital Culture and Data Analytics with a business minor at TCU.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="about.html#projects" class="btn-primary">View My Work</a>
+                    <a href="about.html" class="btn-secondary">More About Me</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-frame">
+                    <img src="images/newphoto.JPG" alt="Charlie King portrait">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Card -->
+        <section class="home-contact-card" id="contact">
+            <p><strong>Email:</strong> <a href="mailto:charlotte.is.king@gmail.com">charlotte.is.king@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" rel="noopener">Connect with me</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Charlie King</p>
+    </footer>
+
+</body>
 </html>
