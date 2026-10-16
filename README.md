@@ -1,25 +1,37 @@
-# Charlie King — Personal Portfolio
+# Web Development Portfolio — WRIT 40363
 
-A multi-page portfolio website showcasing data analysis projects, digital strategy experience, and technical skill sets built for WRIT 40363.
+A consolidated portfolio showcasing web applications, interactive trackers, data dashboards, and AI-assisted tools developed across the semester.
 
-## Live Website
+**Live Site:** https://charlottesking.github.io/portfolio-charlo.../
 
-- **Live URL:** https://charlottesking.github.io/portfolio-charlottesking/
+---
 
-## Project Description
+## Course Projects
 
-This site was built as part of a Web Design lab to develop an accessible, responsive personal portfolio. It highlights academic coursework, professional internship experience, data analytics tools, and featured case studies.
+- **[Project 1: Developer Portfolio (Original)](projects/project1-original/)**  
+  Foundational multi-page portfolio emphasizing semantic HTML5 structure, responsive layout with CSS, and accessible typography.
 
-## Technologies Used
+- **[Project 2: Interactive Favorites Tracker](projects/project2-tracker/)**  
+  Client-side web application for adding, rating, and filtering favorite entries using vanilla JavaScript and persistent browser storage.
 
-- **HTML5:** Semantic document structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<figure>`, `<aside>`, `<footer>`)
-- **CSS3:** Custom design tokens via CSS variables in `:root`, flexbox, CSS grid, and responsive media queries
-- **Typography:** Google Fonts pairing (`Lora` serif headings with `Inter` body text)
-- **Version Control & Hosting:** Git, GitHub, and GitHub Pages deployment
+- **[Project 3: Analytics & Data Dashboard](projects/project3-dashboard/)**  
+  Data visualization interface parsing and rendering metrics with responsive card layouts and real-time filters. *(Placeholder)*
 
-## Notes
+- **[Project Zed: Don't Poison Yourself (Allergen Guard)](projects/project-zed/)**  
+  AI-assisted web application scanning cosmetics and personal care ingredient lists against custom allergen profiles with reaction logging. *(Placeholder)*
 
-- Accent color (`#8c1d58`) and font pairing were chosen in Lab 10.5, with contrast verified against WCAG AA standards (6.9:1).
-- Accessible keyboard navigation implemented with custom `:focus-visible` states.
-- Fully responsive across desktop, tablet, and mobile screen sizes without horizontal scrolling.
-- Tested and verified on modern desktop and mobile browsers.
+---
+
+## Repository Structure
+
+portfolio-repo/
+├── index.html
+├── css/
+│   └── styles.css
+├── images/
+├── projects/
+│   ├── project1-original/
+│   ├── project2-tracker/
+│   ├── project3-dashboard/
+│   └── project-zed/
+└── README.md
