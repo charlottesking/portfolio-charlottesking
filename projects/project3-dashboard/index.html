@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header>
+        <h1>My Dashboard</h1>
+        <button type="button" id="theme-toggle">Toggle dark mode</button>
+    </header>
+
+    <nav style="padding: 0.75rem 1rem; margin-bottom: 1rem;">
+  <a href="../../index.html" style="font-weight: 600; text-decoration: none;">&larr; Back to Portfolio</a>
+</nav>
+
+    <!-- dashboard here -->
+    <main id="main" class="dashboard">
+        <!-- Weather widget -->
+        <section class="widget">
+            <h2>Weather</h2>
+            <div id="weather-display">Loading weather...</div>
+        </section>
+
+        <!-- Quote widget -->
+        <section class="widget">
+            <h2>Quote</h2>
+            <div id="quotes-display">Loading quotes...</div>
+            <button type="button" id="new-quote-btn" disabled>New Quote</button>
+        </section>
+
+        <!-- Tasks widget -->
+        <section class="widget">
+            <h2>Tasks</h2>
+            <div id="task-stats"></div>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="New task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>   
+</body>
+</html>
