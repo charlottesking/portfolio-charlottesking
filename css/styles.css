@@ -39,7 +39,7 @@ img {
     --color-accent-hover: #67123f;
     --color-badge-bg: #efe2ec;
 
-    /* Spacing Scale — Modular Scale */
+    /* Spacing Scale */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
@@ -348,6 +348,7 @@ aside {
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
+    position: relative;
     transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
@@ -355,6 +356,24 @@ aside {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
     border-color: var(--color-border-hover);
+}
+
+.project-card.featured {
+    background: linear-gradient(180deg, #ffffff 0%, #fdf9fc 100%);
+    border: 1.5px solid var(--color-border-hover);
+}
+
+.badge-featured {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    background-color: var(--color-badge-bg);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
 }
 
 .project-card h3 a {
@@ -377,6 +396,46 @@ aside {
 
 .project-card p {
     color: var(--color-muted);
+}
+
+/* Action Buttons inside Project Cards */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin: var(--space-md) 0;
+}
+
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--color-accent);
+    padding: 0.45rem 0.9rem;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-project:hover {
+    background-color: var(--color-accent-hover);
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.btn-project.secondary {
+    background-color: var(--color-surface-alt);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.btn-project.secondary:hover {
+    background-color: var(--color-surface);
+    border-color: var(--color-border-hover);
+    color: var(--color-accent);
 }
 
 /* Technologies Tag Styling */
@@ -506,3 +565,4 @@ footer {
     font-size: var(--text-sm);
     text-align: center;
 }
+

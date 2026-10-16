@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     </div>
   </nav>
 
-  <!-- Two-Column Header (Photo of yourself) -->
+  <!-- Two-Column Header (Portrait Photo) -->
   <header>
     <div class="header-text">
       <h1>Charlotte (Charlie) King</h1>
@@ -37,7 +37,7 @@
     <!-- Internal Jump Link -->
     <p><a href="#about">Read more about my background and analytical work</a></p>
 
-    <!-- About Section (Second Photo: Grand Junction, Colorado) -->
+    <!-- About Section (Hometown Photo) -->
     <section id="about" class="about">
       <div class="about-image">
         <figure>
@@ -60,10 +60,13 @@
       
       <ul class="project-list">
         <!-- Project 1 -->
-        <li class="project-card featured">
+        <li class="project-card">
           <h3><a href="projects/project1-original/index.html">Project 1: Original Developer Portfolio</a></h3>
           <p><time datetime="2026-08">August 2026</time></p>
           <p>My foundational multi-page portfolio site engineered using semantic HTML5, CSS design tokens, Flexbox, and CSS Grid. It established core accessibility and visual hierarchy standards, strictly adhering to WCAG AA color contrast guidelines.</p>
+          <div class="project-links">
+            <a href="projects/project1-original/index.html" class="btn-project">Launch Project &rarr;</a>
+          </div>
           <p><strong>Technologies:</strong> Semantic HTML5, Responsive CSS, Flexbox/Grid, Git, GitHub Pages</p>
         </li>
 
@@ -72,23 +75,32 @@
           <h3><a href="projects/project2-tracker/index.html">Project 2: Local Favorites Tracker</a></h3>
           <p><time datetime="2026-09">September 2026</time></p>
           <p>An interactive client-side web application enabling users to curate, rate, and filter favorite local spots and media. Features dynamic DOM updates, real-time client-side category filtering, and persistent browser storage via localStorage without full page reloads.</p>
+          <div class="project-links">
+            <a href="projects/project2-tracker/index.html" class="btn-project">Launch Project &rarr;</a>
+          </div>
           <p><strong>Technologies:</strong> JavaScript (ES6+), DOM Manipulation, Web Storage API (localStorage), Form Validation</p>
         </li>
 
         <!-- Project 3 -->
         <li class="project-card">
-          <h3><a href="projects/project3-dashboard/index.html">Project 3: Analytics &amp; Data Dashboard</a></h3>
+          <h3><a href="projects/project3-dashboard/index.html">Project 3: Personal Data Dashboard</a></h3>
           <p><time datetime="2026-10">October 2026</time></p>
-          <p>A data visualization dashboard engineered to ingest structured data sets and render responsive, accessible metrics for fast decision-making. Built with modular JavaScript and dynamic UI components that support real-time data sorting and multi-criteria filtering.</p>
-          <p><strong>Technologies:</strong> Data Parsing, JavaScript, CSS Grid Architecture, Responsive Visualization</p>
+          <p>A modular data visualization dashboard engineered to ingest structured JSON data sets and render responsive metrics. Built with vanilla JavaScript, fetch() API calls, dynamic widget state management, and an accessible theme system.</p>
+          <div class="project-links">
+            <a href="projects/project3-dashboard/index.html" class="btn-project">Launch Project &rarr;</a>
+          </div>
+          <p><strong>Technologies:</strong> JavaScript (fetch API), JSON Data Parsing, Modular CSS Architecture, Theme System</p>
         </li>
 
         <!-- Project Zed -->
         <li class="project-card">
           <h3><a href="projects/project-zed/index.html">Project Zed: Don't Poison Yourself (Allergen Guard)</a></h3>
           <p><time datetime="2026-10">October 2026</time></p>
-          <p>An AI-assisted web application designed to scan personal care and cosmetic product ingredient lists against customizable user allergy profiles. Includes instant ingredient string normalization and matching, an interactive 48-hour patch-test tracker, and rolling 6-month reaction trend analytics.</p>
-          <p><strong>Technologies:</strong> AI-Assisted Development, Regular Expressions, String Normalization, Time-Series Analytics, localStorage</p>
+          <p>An AI-assisted web application designed to scan personal care and cosmetic product ingredient lists against customizable user allergy profiles. Includes instant ingredient string normalization and matching, an interactive 48-hour patch-test tracker, and rolling 6-month reaction trend analytics with local persistence.</p>
+          <div class="project-links">
+            <a href="projects/project-zed/index.html" class="btn-project">Launch Project &rarr;</a>
+          </div>
+          <p><strong>Technologies:</strong> AI-Assisted Development, Regular Expressions, String Normalization, Time-Series Analytics, Web Storage API</p>
         </li>
       </ul>
     </section>
